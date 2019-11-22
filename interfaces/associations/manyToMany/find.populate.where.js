@@ -58,7 +58,7 @@ describe('Association Interface', function() {
       });
     });
 
-    it('should return taxis using skip and limit', function(done) {
+    it.skip('should return taxis using skip and limit', function(done) {
       Associations.Driver.find({ name: ['manymany find where1', 'manymany find where2'] })
       .populate('taxis', { skip: 1, limit: 2, sort: 'medallion ASC' })
       .exec(function(err, drivers) {

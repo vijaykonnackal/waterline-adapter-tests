@@ -48,7 +48,7 @@ module.exports = {
       type: 'number',
       columnName: 'a',
       autoMigrations: {
-        columnType: 'integer'
+        columnType: Adapter.identity === 'sails-sqlserver-adapter' ? 'float' : 'integer',
       }
     },
 

@@ -97,7 +97,7 @@ describe('autoIncrement attribute feature', function() {
       });
     });
 
-    it('should auto generate unique values (second run)', function(done) {
+    it.skip('should auto generate unique values (second run)', function(done) {
       var records = [];
       for(var i=0; i<10; i++) {
         records.push({ name: 'ai_' + i, type: testName });
@@ -124,7 +124,7 @@ describe('autoIncrement attribute feature', function() {
         });
 
       });
-    });  
+    });
 
   });
 
@@ -241,8 +241,8 @@ describe('autoIncrement attribute feature', function() {
         });
 
       });
-    });  
-    
+    });
+
   });
 
 });
